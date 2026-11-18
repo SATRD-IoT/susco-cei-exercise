@@ -1,0 +1,17 @@
+.env
+.env.*.local
+__pycache__/
+.pytest_cache/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+*.log
+*.zip
+
+# Session-scoped resource registry / notebook outputs
+cei_lab_state/
+.ipynb_checkpoints/
+.venv/
+__pycache__/
+.pytest_cache/

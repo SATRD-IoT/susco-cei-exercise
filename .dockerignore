@@ -1,0 +1,15 @@
+# Never send credentials, private notebook state, or unrelated teaching files to Docker build.
+.env
+.env.*
+cei_lab_state/
+notebooks/
+scenarios/
+tests/
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+*.zip
+*.log

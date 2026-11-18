@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cei-lab-prototype"
+version = "0.4.1"
+description = "Teaching prototype: local Docker jobs, Orion-LD execution records, and aeriOS remote one-shot jobs"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31,<3", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab>=4,<5", "matplotlib>=3.7", "ipywidgets>=8,<9", "pandas>=2,<3"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+cei-cpu-job = "cei_lab.workloads.cpu:main"
+cei-iot-job = "cei_lab.workloads.iot:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
